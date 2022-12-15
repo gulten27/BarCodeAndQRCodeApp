@@ -3,6 +3,7 @@
     package="com.gultendogan.barcodeandqrcodeapp">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BarcodeAndQRCodeApp">
-        <activity android:name=".qr.QrActivity"></activity>
+        <activity android:name=".qr.WebViewActivity"></activity>
+        <activity android:name=".qr.QrActivity" />
         <activity android:name=".barcode.BarcodeActivity" />
         <activity
             android:name=".MainActivity"

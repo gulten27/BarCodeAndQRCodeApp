@@ -122,6 +122,11 @@ class QrActivity : AppCompatActivity() {
                             binding.clearText.setOnClickListener {
                                 startCamera()
                             }
+                            binding.go.setOnClickListener {
+                                val intent = Intent(this@QrActivity,WebViewActivity::class.java)
+                                intent.putExtra("url",binding.BarcodeValue.text)
+                                startActivity(intent)
+                            }
                         }
                     }
                 }.addOnFailureListener {
