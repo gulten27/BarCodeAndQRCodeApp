@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BarcodeAndQRCodeApp">
-        <activity android:name=".barcode.BarcodeActivity"></activity>
+        <activity android:name=".qr.QrActivity"></activity>
+        <activity android:name=".barcode.BarcodeActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

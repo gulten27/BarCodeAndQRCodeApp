@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.gultendogan.barcodeandqrcodeapp.barcode.BarcodeActivity
 import com.gultendogan.barcodeandqrcodeapp.databinding.ActivityMainBinding
+import com.gultendogan.barcodeandqrcodeapp.qr.QrActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.barcodeButton.setOnClickListener {
             val intent = Intent(this, BarcodeActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.qrcodeButton.setOnClickListener {
+            val intent = Intent(this, QrActivity::class.java)
             startActivity(intent)
         }
 
