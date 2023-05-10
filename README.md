@@ -2,9 +2,9 @@
 
 
 #### Project Features
- - Firebase Machine Learning Kit<br>
- - CameraX <br>
- - WebView <br>
+ :heavy_check_mark: Firebase Machine Learning Kit<br>
+ :heavy_check_mark: CameraX <br>
+ :heavy_check_mark: WebView <br>
 
 #### App Screenshots
 
